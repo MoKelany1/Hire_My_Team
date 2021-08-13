@@ -1,0 +1,318 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+}
+ul {
+    list-style: none;
+}
+:focus {
+    outline: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+.container > div {
+    width: 428px;
+    height: 926px;
+    background-color: #5a55ca;
+    margin: 100px auto 0;
+}
+.ellipse {
+    position: absolute;
+    left: -12%;
+    top: -6%;
+}
+/* Start Splash Screen */
+.splash-screen {
+    margin: 100px auto 50px !important;
+    overflow: hidden;
+}
+.splash-screen .circles {
+    position: relative;
+    left: -29%;
+    top: -10%;
+}
+.splash-screen .logo {
+    width: fit-content;
+    margin: 0 auto;
+}
+/* End Splash Screen */
+/* Start Landing Page */
+.landing {
+    position: relative;
+    overflow: hidden;
+}
+.landing .heading {
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.landing .heading h2 {
+    font-weight: 600;
+    margin: 62px 0 20px;
+    color: white;
+    font-size: 24px;
+}
+.landing .heading form input {
+    position: relative;
+    padding: 25px;
+    height: 50px;
+    width: 348px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: none;
+}
+.landing .heading form img {
+    position: absolute;
+    right: 68px;
+    top: 60px;
+    cursor: pointer;
+}
+.landing .jobs {
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.landing .jobs .card {
+    width: 348px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.landing .jobs .card .name .job-name {
+    color: #393f93;
+    font-weight: 600;
+    font-size: 22px;
+}
+.landing .jobs .card .name .time {
+    color: #333333;
+    font-weight: 600;
+    margin: 10px 0 15px;
+    font-size: 12px;
+}
+.landing .jobs .card .name .company {
+    color: #333333;
+    font-weight: bold;
+    font-size: 15px;
+}
+.landing .jobs .card .name .company span {
+    border-bottom: 1px #333333 solid;
+}
+.landing .jobs .card .icon {
+    cursor: pointer;
+}
+.landing .jobs hr {
+    width: 348px;
+    margin: 0 auto;
+    color: #707070;
+    opacity: .1;
+}
+.landing .publish {
+    height: 83px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .publish button {
+    height: 60px;
+    width: 348px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #5a55ca;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20;
+    margin-bottom: 20px;
+}
+/* End Landing Page */
+/* Start Job Detail */
+.job-detail {
+    position: relative;
+    overflow: hidden;
+}
+.job-detail .ellipse {
+    top: -3%;
+}
+.job-detail .backarrow {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 35px 0 60px 40px;
+}
+.job-detail .backarrow .image {
+    margin-right: 17px;
+    cursor: pointer;
+}
+.job-detail .backarrow .text {
+    font-weight: 600;
+    font-size: 20px;
+}
+.job-detail .job-title {
+    position: relative;
+    margin: 0 0 0 40px;
+    color: white;
+}
+.job-detail .job-title .name {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 24px;
+} 
+.job-detail .job-title .time {
+    margin-bottom: 26px;
+    font-weight: 600;
+    font-size: 12px;
+    opacity: .6;
+}
+.job-detail .detail {
+    position: relative;
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0 -8px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 33px;
+}
+.job-detail .detail .name {
+    font-weight: bold;
+    font-size: 22px;
+    color: #333333;
+    margin: 0 0 30px 40px;
+}
+.job-detail .detail .name span {
+    border-bottom: 1px solid #333333;
+}
+.job-detail .detail .text {
+    width: 350px;
+    height: fit-content;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #33333360;
+    padding-bottom: 88px;
+}
+.job-detail .apply {
+    height: 135px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.job-detail .apply button {
+    height: 60px;
+    width: 348px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #5a55ca;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20;
+}
+/* End Job Detail */
+/* Start Upload */
+.page {
+    background-color: #5a55ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload {
+    background-color: white;
+    width: 370px;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.upload .text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 40px;
+    text-align: center;
+}
+.upload .icon {
+    width: fit-content;
+    margin: 27px auto 0;
+    cursor: pointer;
+}
+.upload button {
+    height: 40px;
+    width: 160px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    margin: 24px auto 0;
+    background-color: #393f93;
+    color: white;
+    cursor: pointer;
+}
+/* End Upload */
+/* Start Success */
+.page1 {
+    background-color: #5a55ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success {
+    background-color: white;
+    width: 370px;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.success .icon {
+    width: fit-content;
+    margin: 27px auto 0;
+    cursor: pointer;
+}
+.success .text {
+    width: 206px;
+    height: 54px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+    margin: 40px auto 0;
+}
+/* End Success */
